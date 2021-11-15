@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <title>Lista de Adoção</title>
+        <meta charset="utf-8">
+
+        <!--- Links Boodstrap. --->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+        </script>
+
+        <!-- Google Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+            rel="stylesheet">
+
+        <link rel="stylesheet" href="../css/estilo.css">
+        <!--- Informações da página. --->
+        <meta name="author" content="Eloísa Martins, Julia K. Ladevig, Melissa Radatz">
+        <meta name="description" content="Site para .">
+        <meta http-equiv="refresh" content="9999999999999999999999">
+        <meta name="keywords" content="encontrar, pets, animais, estimação, abrigo, buscar.">
+        <link rel="shortcut icon" href="../img/vetor_pata_laranja_s.svg">
+
+    </head>
+
+    <body class="fundo_colorido">
+        <!-- ======= Header ======= -->
+        <header class="sticky-top d-flex align-items-center">
+            <nav class="navbar navbar-expand-lg mx-auto">
+                <div class="container">
+                    <h1><a id="navbar_logo" class="navbar-brand" href="../index.html"> My Pet's Finder </a></h1>
+                    <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                        <li class="dropdown"><a href="#"><span>PERDIDOS</span></a>
+                            <ul>
+                                <li><a href="lista_perdidos.html">Lista de Pets Perdidos</a></li>
+                                <li><a href="cadastro_perdido.html">Cadastrar um Pet Perdido</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a href="#"><span>ENCONTRADOS</span></a>
+                                <ul>
+                                <li><a href="lista_encontrados.html">Lista de Pets Encontrados</a></li>
+                                <li><a href="cadastro_encontrado.html">Cadastrar um Pet Encontrado</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a href="#"><span>ADOÇÃO</span></a>
+                                <ul>
+                                <li><a href="lista_adocao.html">Lista de Pets para Adoção</a></li>
+                                <li><a href="cadastro_adocao.html">Cadastrar um Pet para Adoção</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="quem_somos.html">QUEM SOMOS?</a></li>
+                        <li class="nav-item"><a id="navbar_login" class="nav-link" href="login.html">ENTRAR</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header><!-- End Header -->
+
+        <!-- =======Main======= -->
+        <main>
+            
+            <div class="container">
+                <table class="table table-primary">
+                    <thead>
+                        <!-- primeira linha da tabela: títulos -->
+                        <tr>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Idade</th>
+                            <th scope="col">Sexo</th>
+                            <th scope="col">Tamanho</th>
+                            <th scope="col">Espécie</th>
+                            <th scope="col">Raça</th>
+                            <th scope="col">Cor</th>
+                            <th scope="col">Foto</th>
+                            <th scope="col">Descrição</th>
+                            <th scope="col">Observações</th>
+                            <th scope="col">Operação</th>
+                        </tr>
+                    </thead>
+                    <tbody id="corpoTabelaAdocoes">
+                    </tbody>
+                </table>
+            </div>
+
+        </main><!-- End Main -->
+
+        <!-- ======= Footer ======= -->
+        <footer class="fixed-bottom text-center">
+            <div class="container pt-4">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <h3>My Pet's Finder</h3>
+                        <p>Et aut eum quis fuga.</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <ul>
+                            <li class="icone_li"><a href="cadastro_perdido.html">Animais Perdidos</a></li>
+                            <li class="icone_li"><a href="cadastro_encontrado.html">Animais Encontrados</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <ul>
+                            <li class="icone_li"><a href="cadastro_adocao.html">Quero Adotar</a></li>
+                            <li class="icone_li"><a href="quem_somos.html">Quem Somos</a></li>
+                        </ul>
+                    </div>
+                    <div class="credits text-center">
+                        <p>Developed by Eloísa Martins, Julia K. Ladevig e Melissa Radatz. 2021.</p>
+                    </div>
+                </div>
+            </div>
+        </footer><!-- End Footer -->
+
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> -->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <!-- código do front-end -->
+        <script src="../js/animais_adocao.js"></script>
+    </body>
+</html>

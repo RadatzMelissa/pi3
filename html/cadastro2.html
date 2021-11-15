@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <title>Cadastro Usuário</title>
+        <meta charset="utf-8">
+
+        <!--- Links Boodstrap. --->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+        </script>
+
+        <!-- Google Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+            rel="stylesheet">
+
+        <link rel="stylesheet" href="../css/estilo.css">
+        <!--- Informações da página. --->
+        <meta name="author" content="Eloísa Martins, Julia K. Ladevig, Melissa Radatz">
+        <meta name="description" content="Site para .">
+        <meta http-equiv="refresh" content="9999999999999999999999">
+        <meta name="keywords" content="encontrar, pets, animais, estimação, abrigo, buscar.">
+        <link rel="shortcut icon" href="../img/vetor_pata_laranja_s.svg">
+    </head>
+
+    <body class="fundo_colorido">
+        <!-- ======= Header ======= -->
+        <header class="sticky-top d-flex align-items-center">
+            <nav class="navbar navbar-expand-lg mx-auto">
+                <div class="container">
+                    <h1><a id="navbar_logo" class="navbar-brand" href="../index.html"> My Pet's Finder </a></h1>
+                    <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                        <li class="dropdown"><a href="#"><span>PERDIDOS</span></a>
+                            <ul>
+                            <li><a href="#">Lista de Pets Perdidos</a></li>
+                            <li><a href="cadastro_perdido.html">Cadastrar um Pet Perdido</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="#"><span>ENCONTRADOS</span></a>
+                            <ul>
+                            <li><a href="#">Lista de Pets Encontrados</a></li>
+                            <li><a href="cadastro_encontrado.html">Cadastrar um Pet Encontrado</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="#"><span>ADOÇÃO</span></a>
+                            <ul>
+                            <li><a href="#">Lista de Pets para Adoção</a></li>
+                            <li><a href="cadastro_adocao.html">Cadastrar um Pet para Adoção</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="quem_somos.html">QUEM SOMOS?</a></li>
+                        <li class="nav-item"><a id="navbar_login" class="nav-link" href="login.html">ENTRAR</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header><!-- End Header -->
+        
+        <!-- =======Main======= -->
+        <main style="max-width:860px" class="mx-auto bg-light">
+            <div style="max-width:660px" class="mx-auto">    
+                <div class="pt-5 text-center">
+                    <img class="d-block mx-auto mb-4" src="../img/vetor_pata_laranja_s.svg" alt="" height="100">
+                    <h2>Bem vindo! Chega mais!</h2>
+                    <p class="lead">Este é o primeiro passo para que possamos te ajodar a divulgar o seu bichinho. 
+                        Então chapriche e tome cuidado para que todas as informações fornecidas sejam verdadeiras ;) </p>
+                </div>
+
+                <div>
+                    <form class="needs-validation" novalidate>
+                        <div class="row g-2">
+                            <div class="col-12">
+                                <label for="nome" class="form-label">Nome Completo</label>
+                                <input type="text" class="form-control" id="nome" placeholder="Maria da Silva" value="" required>
+                                <div class="invalid-feedback">
+                                    Oops... o seu nome não pode ficar em branco.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-2">
+                            <div class="col-12 pb-2">
+                                <label for="email" class="form-label">E-mail</label>
+                                <div class="input-group has-validation">
+                                    <span class="input-group-text">@</span>
+                                    <input type="email" class="form-control" id="email" placeholder="email@exemplo.com" required>
+                                    <div class="invalid-feedback">
+                                        Oops... o seu e-mail precisa ser válido.
+                                    </div>
+                                </div>
+                                <span class="text-muted">As pessoas irão te contactar por este email.</span>
+                            </div>
+                        </div>
+                        <div class="row g-2 pb-2">
+                            <div class="col-12">
+                                <label for="email2" class="form-label">E-mail (de novo)</label>
+                                <div class="input-group has-validation">
+                                    <span class="input-group-text">@</span>
+                                    <input type="email" class="form-control" id="email2" placeholder="email@exemplo.com" required>
+                                    <div class="invalid-feedback">
+                                        Oops... o seu e-mail precisa ser válido.
+                                    </div>
+                                </div>
+                                <span class="text-muted">A gente pede duas vezes para ter certeza de que você não vai errar!</span>
+                            </div>
+                        </div>
+
+                        <div class="row g-2 pb-2">
+                            <div class="col-12">
+                                <label for="telefone" class="form-label">Telefone ou WhatsApp</label>
+                                <input type="text" class="form-control" id="telefone" placeholder="(XX) x xxxx-xxxx" required>
+                                <div class="invalid-feedback">
+                                    Oops... o seu número precisa ser válido.
+                                </div>
+                                <span class="text-muted">As pessoas irão te contactar por este número.</span>
+                            </div>
+                        </div>
+
+                        <div class="row g-2 pb-4">
+                            <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="mostrar_tel">
+                            <label class="form-check-label" for="same-address">Ocultar telefone.</label>
+                            </div>
+                            <span class="text-muted">Ao marcar essa opção, apenas a nossa equipe poderá ver o seu telefone. 
+                            Mas não recomendamos que isso seja feito, pois as chances de alguém entrar em contato com você 
+                            reduzem bastante.</span>
+                        </div>
+
+                        <div class="row g-2 pb-2">
+                            <div class="col-md-6">
+                                <label for="cidade" class="form-label">Cidade do Vale do Itajaí</label>
+                                <input type="text" class="form-control" id="cidade" placeholder="Blumenau" required>
+                                <div class="invalid-feedback">
+                                    Por favor, digite uma cidade.
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="bairro" class="form-label">Bairro</label>
+                                <span class="text-muted">(Opcional)</span>
+                                <input type="text" class="form-control" id="bairro" placeholder="">
+                            </div>
+                        </div>
+
+                        <div class="row g-2 pb-2">
+                            <div class="col-md-6">
+                                <label for="senha" class="form-label">Senha</label>
+                                <input type="password" class="form-control" id="senha" placeholder="" required>
+                                <div class="invalid-feedback">
+                                    Oops, a senha não pode ficar em branco.
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="senha" class="form-label">Confirme a senha</label>
+                                <input type="password" class="form-control" id="senha2" placeholder="" required>
+                                <div class="invalid-feedback">
+                                    Oops, a senha não pode ficar em branco.
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="my-4">
+                        <div class="text-center">
+                            <button id="btn_incluir_pessoa" class="w-50 btn btn-outline-primary btn-lg mb-5" 
+                            type="submit">Pronto!</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main><!-- End Main -->
+
+        <!-- ======= Footer ======= -->
+        <footer class="sticky-bottom text-center">
+            <div class="container pt-4">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <h3>My Pet's Finder</h3>
+                        <p>Et aut eum quis fuga.</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <ul>
+                            <li class="icone_li"><a href="cadastro_perdido.html">Animais Perdidos</a></li>
+                            <li class="icone_li"><a href="cadastro_encontrado.html">Animais Encontrados</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <ul>
+                            <li class="icone_li"><a href="cadastro_adocao.html">Quero Adotar</a></li>
+                            <li class="icone_li"><a href="quem_somos.html">Quem Somos</a></li>
+                        </ul>
+                    </div>
+                    <div class="credits text-center">
+                        <p>Developed by Eloísa Martins, Julia K. Ladevig e Melissa Radatz. 2021.</p>
+                    </div>
+                </div>
+            </div>
+        </footer><!-- End Footer -->
+
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+        <!-- código específico do front-end -->
+        <script src="../js/meuscript.js"></script>
+        <script src="../js/conferir_dados_cadastro.js"></script>
+    </body>
+</html>

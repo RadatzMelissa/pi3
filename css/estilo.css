@@ -1,0 +1,186 @@
+/*--------------------------------------------------------------
+# Geral
+--------------------------------------------------------------*/
+body {
+	font-family: "Open Sans", sans-serif;
+	color: #444444;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Raleway", sans-serif;
+}
+
+a {
+	color: rgba(33, 37, 41);
+	transition: color .15s ease-in-out;
+	text-decoration: none;
+}
+
+a:hover {
+	color: rgba(46, 135, 251);
+	text-decoration: none;
+}
+
+/*--------------------------------------------------------------
+# Navbar
+--------------------------------------------------------------*/
+
+header {
+	background-color: rgba(248, 249, 250, 0.432);
+	-webkit-backdrop-filter: saturate(180%) blur(20px);
+	backdrop-filter: saturate(180%) blur(20px);
+}
+
+.navbar-dark .navbar-toggler-icon {
+	background-image: url("https://image.flaticon.com/icons/png/128/1828/1828859.png");
+}
+
+.navbar {
+	padding: 0;
+}
+
+#navbar_logo{
+	color:#fa8734;
+	font-size: 20px;
+}
+
+.navbar ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	list-style: none;
+	align-items: center;
+}
+
+.navbar li {
+	position: relative;
+}
+
+.navbar a,
+.navbar a:focus {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 0 10px 30px;
+	font-size: 16px;
+	color: rgba(46, 135, 251);
+	white-space: nowrap;
+	transition: 0.3s;
+	font-family: "Poppins", sans-serif;
+}
+
+.navbar a i,
+.navbar a:focus i {
+	font-size: 12px;
+	line-height: 0;
+	margin-left: 5px;
+}
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover>a {
+	color: #97e4ea;
+}
+
+.navbar .dropdown ul {
+	display: block;
+	position: absolute;
+	left: 14px;
+	top: 100%;
+	margin: 0;
+	padding: 10px 0;
+	z-index: 99;
+	opacity: 0;
+	visibility: hidden;
+	background: #fff;
+	box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+	transition: 0.3s;
+	border-radius: 4px;
+}
+
+.navbar .dropdown ul li {
+	min-width: 200px;
+}
+
+.navbar .dropdown ul a {
+	padding: 10px 20px;
+	text-transform: none;
+}
+
+.navbar .dropdown ul a i {
+	font-size: 12px;
+}
+
+.navbar .dropdown ul a:hover,
+.navbar .dropdown ul .active:hover,
+.navbar .dropdown ul li:hover>a {
+	color: #97e4ea;
+}
+
+.navbar .dropdown:hover>ul {
+	opacity: 1;
+	visibility: visible;
+}
+
+.navbar .dropdown .dropdown ul {
+	top: 0;
+	left: calc(100% - 30px);
+	visibility: hidden;
+}
+
+.navbar .dropdown .dropdown:hover>ul {
+	opacity: 1;
+	top: 0;
+	left: 100%;
+	visibility: visible;
+}
+
+#navbar_login {
+	color: #fa8734;
+}
+
+#navbar_login:hover {
+	text-decoration: underline;
+}
+
+/*--------------------------------------------------------------
+# Main
+--------------------------------------------------------------*/
+.fundo_colorido{
+	background-color: #eefdf6;
+	background-image: url("../img/fundo_claro.jpg");
+}
+
+h1 {
+	color: #fa8734;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+footer{
+	background-color: #cbf3eb;
+}
+.icone_li {
+	margin: 0;
+	list-style: none;
+	background-image: url("http://cdn.onlinewebfonts.com/svg/img_516771.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 4%;
+}
+
+
+
+
+
+
+
+
+	
