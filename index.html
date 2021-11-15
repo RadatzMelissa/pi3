@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+  <html lang="pt-br">
+
+  <head>
+    <title>My Pet's Finder</title>
+    <meta charset="utf-8">
+
+    <!--- Links Boodstrap. --->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+    </script>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,
+      700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet">
+
+    <link rel="stylesheet" href="css/estilo.css">
+    <!--- Informações da página. --->
+    <meta name="author" content="Eloísa Martins, Julia K. Ladevig, Melissa Radatz">
+    <meta name="description" content="Site para .">
+    <meta http-equiv="refresh" content="9999999999999999999999">
+    <meta name="keywords" content="encontrar, pets, animais, estimação, abrigo, buscar.">
+    <link rel="shortcut icon" href="img/vetor_pata_laranja_s.svg">
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header class="sticky-top d-flex align-items-center">
+        <nav class="navbar navbar-expand-lg mx-auto">
+            <div class="container">
+                <h1><a id="navbar_logo" class="navbar-brand" 
+                  href="#"> My Pet's Finder </a></h1>
+                <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="dropdown"><a href="#"><span>PERDIDOS</span></a>
+                        <ul>
+                          <li><a href="html/lista_perdidos.html">Lista de Pets Perdidos</a></li>
+                          <li><a href="html/cadastro_perdido.html">Cadastrar um Pet Perdido</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a href="#"><span>ENCONTRADOS</span></a>
+                        <ul>
+                          <li><a href="html/lista_encontrados.html">Lista de Pets Encontrados</a></li>
+                          <li><a href="html/cadastro_encontrado.html">Cadastrar um Pet Encontrado</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a href="#"><span>ADOÇÃO</span></a>
+                        <ul>
+                          <li><a href="html/lista_adocao.html">Lista de Pets para Adoção</a></li>
+                          <li><a href="html/cadastro_adocao.html">Cadastrar um Pet para Adoção</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item"><a class="nav-link" href="html/quem_somos.html">QUEM SOMOS?</a></li>
+                      <li class="nav-item"><a id="navbar_login" class="nav-link" href="html/login.html">ENTRAR</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header><!-- End Header -->
+
+    <!-- ======= Main ======= -->
+    <main>
+
+      <!-- ======= Carousel ======= -->
+      <div id="carouselExampleIndicators" class="carousel carousel-dark slide mx-auto" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href="html/cadastro_perdido.html"><img class="d-block mx-auto" src="img/carousel_perdido.jpg" 
+              alt="First slide"></a>
+          </div>
+          <div class="carousel-item mx-auto">
+            <a href="html/cadastro_adocao.html"><img class="d-block mx-auto" src="img/carousel_doar.jpg" 
+              alt="Second slide"></a>
+          </div>
+          <div class="carousel-item mx-auto">
+            <a href="html/cadastro_encontrado.html"><img class="d-block mx-auto" src="img/carousel_encontrado.jpg" 
+              alt="Third slide"></a>
+          </div>
+          <div class="carousel-item mx-auto">
+            <a href="html/cadastro_adocao.html"><img class="d-block mx-auto" src="img/carousel_adotar.jpg" 
+              alt="Forth slide"></a>
+          </div>
+          <div class="carousel-item mx-auto">
+            <a href="html/login.html"><img class="d-block mx-auto" src="img/carousel_ajuda.jpg" 
+              alt="Fifth slide"></a>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" 
+        data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" 
+        data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden"></span>
+        </button>
+      </div><!-- End Carousel -->
+
+
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="img/mapa_sc.png"
+              class="d-block mx-lg-auto img-fluid" alt="Mapa Vale do Itajaí" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-3">Como o site funciona</h1>
+            <p class="lead">Esse site é feito para te auxiliar em diversos momentos:
+            Perda do seu animalzinho, encontrou um animalzinho perdido, quer adotar
+            um novo amigo ou doar um animalzinho para uma nova família.
+            É importante lembrar que esse site é feito para todo o território do Vale do Itajaí.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
+              <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main><!-- End Main -->
+    
+    <!-- ======= Footer ======= -->
+    <footer class="sticky-bottom text-center">
+      <div class="container pt-4">
+        <div class="row">
+          <div class="col-lg-5 col-md-6">
+            <h3>My Pet's Finder</h3>
+            <p>Et aut eum quis fuga.</p>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <ul>
+              <li class="icone_li"><a href="html/cadastro_perdido.html">Animais Perdidos</a></li>
+              <li class="icone_li"><a href="html/cadastro_encontrado.html">Animais Encontrados</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <ul>
+              <li class="icone_li"><a href="html/cadastro_adocao.html">Quero Adotar</a></li>
+              <li class="icone_li"><a href="html/quem_somos.html">Quem Somos</a></li>
+            </ul>
+          </div>
+          <div class="credits text-center">
+            <p>Developed by Eloísa Martins, Julia K. Ladevig e Melissa Radatz. 2021.</p>
+          </div>
+        </div>
+      </div>
+    </footer><!-- End Footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+      integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous">
+    </script>
+  </body>
+</html>
