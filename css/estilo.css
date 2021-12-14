@@ -166,6 +166,8 @@ h1 {
 --------------------------------------------------------------*/
 footer{
 	background-color: #cbf3eb;
+	width:100%;
+	text-align: center;
 }
 .icone_li {
 	margin: 0;
