@@ -22,7 +22,7 @@
         <!--- Informações da página. --->
         <meta name="author" content="Eloísa Martins, Julia K. Ladevig, Melissa Radatz">
         <meta name="description" content="Site para .">
-        <meta http-equiv="refresh" content="9999999999999999999999">
+        <meta http-equiv="refresh" content="300">
         <meta name="keywords" content="encontrar, pets, animais, estimação, abrigo, buscar.">
         <link rel="shortcut icon" href="../img/vetor_pata_laranja_s.svg">
 
@@ -67,7 +67,7 @@
         </header><!-- End Header -->
 
         <!-- =======Main======= -->
-        <main>
+        <main id='lista_adocao'>
             
             <div class="container">
                 <table class="table table-primary">
@@ -84,7 +84,8 @@
                             <th scope="col">Foto</th>
                             <th scope="col">Descrição</th>
                             <th scope="col">Observações</th>
-                            <th scope="col">Operação</th>
+                            <th scope="col">Excluir</th>
+                            <th scope="col">Alterar</th>
                         </tr>
                     </thead>
                     <tbody id="corpoTabelaAdocoes">
@@ -94,8 +95,97 @@
 
         </main><!-- End Main -->
 
+        <!-- =======Tabela Alteração======= -->
+        <div id='tabla_alterar_adocao' style="max-width:860px" class="mx-auto bg-light d-none">
+            <div style="max-width:660px" class="mx-auto">    
+                <div class="pt-5 text-center">
+                    <img class="d-block mx-auto mb-4" src="../img/vetor_pata_laranja_s.svg" alt="" height="100">
+                    <h2>Alterar dados:</h2>
+                </div>
+
+                <div>
+                    <form class="needs-validation" novalidate>
+                        <div class="row g-2">
+                            <h5>Informações básicas:</h5>
+                            <div class="col-6">
+                                <label for="nome" class="form-label">Nome do animal</label>
+                                <input type="text" class="form-control" id="nome_adocao">
+                                <span class="text-muted">Você pode deixar esse espaço em branco se o seu amiguinho ainda não tiver um nome.</span>
+                            </div>
+
+                            <div class="col-6">
+                                <label for="idade" class="form-label">Idade do animal</label>
+                                <input type="text" class="form-control" id="idade">
+                            </div>
+                        </div>
+                        <div class="row py-2">
+                            <div class="col-4">
+                                <label for="sexo" class="form-label">Sexo:</label>
+                                <input type="text" class="form-control" id="sexo">
+                            </div>
+                            <div class="col-4">
+                                <label for="tamanho" class="form-label">Tamanho:</label>
+                                <input type="text" class="form-control" id="tamanho">
+                            </div>
+                            <div class="col-4">
+                                <label for="especie" class="form-label">Especie:</label>
+                                <input type="text" class="form-control" id="especie">
+                            </div>
+                        </div>
+                        
+                        <hr class="my-3">
+                        <h5>Como o seu animalzinho é:</h5>
+                        <hr class="my-3">
+                        <div class="row g-2 pb-2">
+                            <div class="col-6">
+                                <label for="raca" class="form-label">Raça:</label>
+                                <input type="text" class="form-control" id="raca">
+                            </div>
+
+                            <div class="col-6">
+                                <label for="cor" class="form-label">Cor:</label>
+                                <input type="text" class="form-control" id="cor">
+                            </div>
+                        </div>
+
+                        <div class="row g-2 pb-2">
+                            <div class="col-12">
+                                <label for="foto" class="form-label">Foto:</label>
+                                <div class="input-group has-validation">
+                                    <input type="file" class="form-control" id="foto">
+                                </div>
+                                <span class="text-muted">Capriche no visual do seu amiguinho ;D</span>
+                            </div>
+                        </div>
+
+                        <div class="row g-2 pb-4">
+                            <div class="col-12">
+                                <label for="descricao" class="form-label">Descrição:</label>
+                                <textarea class="form-control" id="descricao" rows="2"></textarea>
+                                <span class="text-muted">Fale um pouco sobre o seu bichinho... 
+                                    Como ele é? Do que ele gosta?</span>
+                            </div>
+                        </div>
+
+                        <hr class="my-3">
+                        <div class="row g-2 pb-2">
+                            <div class="col-12">
+                                <label for="obs" class="form-label">Observações importantes:</label>
+                                <textarea class="form-control" id="obs" rows="3"></textarea>
+                            </div>
+                        </div>
+                        <hr class="my-4">
+                        <div class="text-center">
+                            <button id="btn_alterar_adocao" class="w-50 btn btn-outline-primary btn-lg mb-5" 
+                            type="button">Pronto!</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div><!-- End Tabela Alteração -->
+        
         <!-- ======= Footer ======= -->
-        <footer class="fixed-bottom text-center">
+        <footer class="text-center mx-auto">
             <div class="container pt-4">
                 <div class="row">
                     <div class="col-lg-3 col-md-6">
