@@ -1,11 +1,3 @@
-''' O arquivo contém duas classes: Pessoa e Animal_adocao, que estão 
-    sendo utilizadas na plataforma CRUD de animais perdidos 
-    ou que estão para adoção.
-    
-    - Grupo 9 de PI - sistema de adoção de animais
-    Aluna: Melissa Radatz - 302 INFO
-'''
-
 # Importações 
 from config import *
 
@@ -109,19 +101,12 @@ class Adocao(Animal):
 
     # Expressão da classe no formato json
     def json(self):
-        return {
-            "id":self.id,
-            "idade":self.idade,
-            "sexo":self.sexo,
-            "tamanho":self.tamanho,
-            "especie":self.especie,
-            "raca":self.raca,
-            "cor":self.cor,
-            "foto":self.foto,
-            "descricao":self.descricao,
+        json1 = super().json()  
+        json1.update({
             "nome_adocao":self.nome_adocao,
             "obs":self.obs
-        }
+        })
+        return json1
 
 
 class Encontrado(Animal):
@@ -150,22 +135,15 @@ class Encontrado(Animal):
 
     # Expressão da classe no formato json
     def json(self):
-        return {
-            "id":self.id,
-            "idade":self.idade,
-            "sexo":self.sexo,
-            "tamanho":self.tamanho,
-            "especie":self.especie,
-            "raca":self.raca,
-            "cor": self.cor,
-            "foto":self.foto,
-            "descricao":self.descricao,
+        json1 = super().json()  
+        json1.update({
             "coleira":self.coleira,
             "cidade_visto":self.cidade_visto,
             "bairro_visto":self.bairro_visto,
             "rua_visto":self.rua_visto,
             "data_visto":self.data_visto
-        }
+        })
+        return json1
 
 
 class Perdido(Animal):
@@ -195,23 +173,16 @@ class Perdido(Animal):
 
     # Expressão da classe no formato json
     def json(self):
-        return {
-            "id":self.id,
-            "idade":self.idade,
-            "sexo":self.sexo,
-            "tamanho":self.tamanho,
-            "especie":self.especie,
-            "raca":self.raca,
-            "cor":self.cor,
-            "foto":self.foto,
-            "descricao":self.descricao,
+        json1 = super().json()  
+        json1.update({
             "nome_perdido":self.nome_perdido,
             "coleira":self.coleira,
             "cidade_visto":self.cidade_visto,
             "bairro_visto":self.bairro_visto,
             "rua_visto":self.rua_visto,
             "data_visto":self.data_visto
-        }
+        })
+        return json1
 
 
 # Teste das classes

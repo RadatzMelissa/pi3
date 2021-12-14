@@ -54,6 +54,9 @@ def listar_encontrados():
     resposta.headers.add("Access-Control-Allow-Origin", "*")
     return resposta # retornar...
 
+
+
+
 @app.route("/incluir_pessoa", methods=['post'])
 def incluir_pessoa():
     # preparar uma resposta otimista
@@ -122,6 +125,9 @@ def incluir_encontrado():
     resposta.headers.add("Access-Control-Allow-Origin", "*")
     return resposta # responder!
 
+
+
+
 @app.route("/excluir_pessoa/<int:pessoa_id>", methods=['DELETE'])
 def excluir_pessoa(pessoa_id):
     # preparar uma resposta otimista
@@ -185,5 +191,39 @@ def excluir_encontrado(encontrado_id):
     # adicionar cabeçalho de liberação de origem
     resposta.headers.add("Access-Control-Allow-Origin", "*")
     return resposta # responder!
+
+#Função que encontra as informações da adoção
+@app.route("/encontrar_adocao/<int:adocao_id>")
+def encontrar_adocao(adocao_id):
+    adocao = db.session.query(Adocao).filter(Adocao.id == adocao_id)
+    # aplicar o método json que a classe Pessoa possui a cada elemento da lista
+    adocao_em_json = [ x.json() for x in adocao]
+    # converter a lista do python para jsons
+    resposta = jsonify(adocao_em_json)
+    resposta.headers.add("Access-Control-Allow-Origin", "*")
+    return resposta
+
+#Função que encontra as informações do animal encontrado
+@app.route("/encontrar_perdido/<int:perdido_id>")
+def encontrar_perdido(perdido_id):
+    perdido = db.session.query(Perdido).filter(Perdido.id == perdido_id)
+    # aplicar o método json que a classe Pessoa possui a cada elemento da lista
+    perdido_em_json = [ x.json() for x in perdido]
+    # converter a lista do python para jsons
+    resposta = jsonify(perdido_em_json)
+    resposta.headers.add("Access-Control-Allow-Origin", "*")
+    return resposta
+
+#Função que encontra as informações do animal perdido
+@app.route("/encontrar_encontrado/<int:encontrado_id>")
+def encontrar_encontrado(encontrado_id):
+    encontrado = db.session.query(Encontrado).filter(Encontrado.id == encontrado_id)
+    # aplicar o método json que a classe Pessoa possui a cada elemento da lista
+    encontrado_em_json = [ x.json() for x in encontrado]
+    # converter a lista do python para jsons
+    resposta = jsonify(encontrado_em_json)
+    resposta.headers.add("Access-Control-Allow-Origin", "*")
+    return resposta
+
     
 app.run(debug=True)
